@@ -69,7 +69,7 @@ Static main
     Object src/bg_window.o
     Object src/gf_3d_render.o
     Object src/sys_task.o
-    Object asm/unk_0201F990.o
+    Object src/unk_0201F990.o
     Object src/string_control_code.o
     Object src/math_util.o
     Object src/text.o
@@ -239,7 +239,7 @@ Static main
     Object src/sys_vars.o
     Object asm/unk_02066EDC.o
     Object src/field_roamer.o
-    Object asm/unk_0206793C.o
+    Object src/unk_0206793C.o
     Object asm/unk_02067A60.o
     Object src/field_move.o
     Object src/field_move_environment.o
@@ -313,7 +313,7 @@ Static main
     Object src/application/check_savedata.o
     Object src/save_data_read_error.o
     Object src/save_data_write_error.o
-    Object asm/unk_02092B04.o
+    Object src/unk_02092B04.o
     Object src/unk_02092BB8.o
     Object src/unk_02092BE8.o
     Object src/mom_gift.o

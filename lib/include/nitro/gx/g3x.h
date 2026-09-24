@@ -36,6 +36,7 @@ void G3X_InitTable(void);
 void G3X_Reset(void);
 void G3X_SetFog(BOOL enable, GXFogBlend fogMode, GXFogSlope fogSlope, int fogOffset);
 void G3X_SetClearColor(GXRgb rgb, int alpha, int depth, int polygonID, BOOL fog);
+int G3X_GetBoxTestResult(s32 *in);
 
 static inline void G3X_SetShading(GXShading shading) {
     reg_G3X_DISP3DCNT = (u16)((reg_G3X_DISP3DCNT & ~(REG_G3X_DISP3DCNT_THS_MASK | REG_G3X_DISP3DCNT_RO_MASK | REG_G3X_DISP3DCNT_GO_MASK)) | (shading << REG_G3X_DISP3DCNT_THS_SHIFT));
