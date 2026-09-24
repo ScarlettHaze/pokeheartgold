@@ -43,11 +43,12 @@ typedef struct PokeathlonCourseArgs {
         u32 mode;        // 0x004 - Mode flag (1 = special mode) - accessed as u32
         u8 modeBytes[4]; // 0x004-0x007 - Individual byte access: [0]=0x4, [1]=0x5, [2]=0x6, [3]=0x7
     };
-    u8 field_8;        // 0x008
-    u8 field_9;        // 0x009
-    u8 filler_A[4];    // 0x00A
+    u16 unk8;          // 0x008
+    u16 unkA;          // 0x00A
+    u8 unkC;           // 0x00C
+    u8 unkD;           // 0x00D
     u8 shouldFreeHeap; // 0x00E - Flag: if 0, free heap allocations in Exit
-    // ... more fields to be discovered
+    u8 unkF;           // 0x00F
 } PokeathlonCourseArgs;
 
 // Main state machine states

@@ -93,7 +93,7 @@ Static main
     Object src/font_data.o
     Object src/pm_string.o
     Object src/touch_hitbox_controller.o
-    Object asm/unk_02026DE0.o
+    Object src/unk_02026DE0.o
     Object src/unk_02026E30.o
     Object src/unk_02026E84.o
     Object src/gf_3d_vramman.o
@@ -205,7 +205,7 @@ Static main
     Object asm/unk_02054648.o
     Object src/unk_02054E00.o
     Object src/field_bgm.o
-    Object asm/unk_020551B8.o
+    Object src/unk_020551B8.o
     Object asm/unk_02055244.o
     Object src/unk_02055418.o
     Object src/catching_show.o
@@ -320,7 +320,7 @@ Static main
     Object src/unk_020932A4.o
     Object asm/unk_020932E0.o
     Object asm/unk_020957B0.o
-    Object asm/unk_02095DF4.o
+    Object src/unk_02095DF4.o
     Object src/phonebook_dat.o
     Object src/choose_starter.o
     Object asm/unk_020961D8.o
