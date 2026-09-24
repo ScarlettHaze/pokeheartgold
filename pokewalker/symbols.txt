@@ -1,0 +1,9 @@
+# Symbol names used by tools/disasm.py: "ADDRESS NAME  # comment"
+# Add names here as functions/data are identified, then run `make disasm`.
+
+02c4 Start                # reset vector: sets SP=0xff80, inits sections, main loop
+ba78 InitSections         # Renesas C runtime _INITSCT: zero B section, copy D section ROM->RAM
+ba42 RegSave_er2_er6      # Renesas runtime helper: push er2-er6 (called from prologues)
+ba62 RegRestore_er2_er6   # Renesas runtime helper: pop er2-er6 and return (jumped to from epilogues)
+bfba DTBL                 # D section (initialized data) copy table
+bfc0 BTBL                 # B section (zeroed data) table

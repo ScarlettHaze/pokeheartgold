@@ -1,0 +1,135 @@
+	.h8300hn
+	.include "registers.inc"
+	.section .text
+
+	.global func_9342
+
+func_9342:
+	mov.w	r2,@-er7                          ; 9342: 6df2
+	mov.w	e4,@-er7                          ; 9344: 6dfc
+	mov.l	er6,@-er7                         ; 9346: 01006df6
+	mov.b	r0l,r5l                           ; 934a: 0c8d
+	mov.w	e0,r4                             ; 934c: 0d84
+	mov.b	r5l,r1l                           ; 934e: 0cd9
+	extu.w	r1                               ; 9350: 1751
+	shll.w	r1                               ; 9352: 1011
+	add.w	r4,r1                             ; 9354: 0941
+	mov.w	r1,r6                             ; 9356: 0d16
+	mov.b	r5l,r1l                           ; 9358: 0cd9
+	extu.w	r1                               ; 935a: 1751
+	mov.w	r1,e6                             ; 935c: 0d1e
+	mov.b	r5l,r5l                           ; 935e: 0cdd
+	bne	loc_93ae:8                          ; 9360: 464c
+	mov.l	@er6,er4                          ; 9362: 01006964
+	mov.w	e4,r1                             ; 9366: 0dc1
+	add.w	r4,r1                             ; 9368: 0941
+	mov.w	r1,r6                             ; 936a: 0d16
+	mov.w	e6,r1                             ; 936c: 0de1
+	add.w	#0x5,r1                           ; 936e: 79110005
+	mov.b	r1l,r1h                           ; 9372: 0c91
+	sub.b	r1l,r1l                           ; 9374: 1899
+	shll.w	r1                               ; 9376: 1011
+	exts.l	er1                              ; 9378: 17f1
+	mov.w	e4,r0                             ; 937a: 0dc0
+	extu.l	er0                              ; 937c: 1770
+	mov.w	e0,r2                             ; 937e: 0d82
+	mulxu.w	r1,er2                          ; 9380: 5212
+	mov.w	e1,r5                             ; 9382: 0d95
+	mulxu.w	r0,er5                          ; 9384: 5205
+	mulxu.w	r1,er0                          ; 9386: 5210
+	add.w	r2,e0                             ; 9388: 0928
+	add.w	r5,e0                             ; 938a: 0958
+	mov.w	e6,r1                             ; 938c: 0de1
+	add.w	#0x6,r1                           ; 938e: 79110006
+	mov.b	r1l,r1h                           ; 9392: 0c91
+	sub.b	r1l,r1l                           ; 9394: 1899
+	shll.w	r1                               ; 9396: 1011
+	exts.l	er1                              ; 9398: 17f1
+	extu.l	er4                              ; 939a: 1774
+	mov.w	e1,r2                             ; 939c: 0d92
+	mulxu.w	r4,er2                          ; 939e: 5242
+	mov.w	e4,r5                             ; 93a0: 0dc5
+	mulxu.w	r1,er5                          ; 93a2: 5215
+	mulxu.w	r4,er1                          ; 93a4: 5241
+	add.w	r2,e1                             ; 93a6: 0929
+	add.w	r5,e1                             ; 93a8: 0959
+	jmp	@loc_9442:24                        ; 93aa: 5a009442
+loc_93ae:
+	cmp.b	#0x9,r5l                          ; 93ae: ad09
+	bne	loc_93d2:8                          ; 93b0: 4620
+	mov.w	@(0x10:16,er4),e4                 ; 93b2: 6f4c0010
+	mov.w	@(0x12:16,er4),e6                 ; 93b6: 6f4e0012
+	mov.w	e4,r6                             ; 93ba: 0dc6
+	add.w	e6,r6                             ; 93bc: 09e6
+	mov.w	e4,r5                             ; 93be: 0dc5
+	mov.w	#0x1a00,e5                        ; 93c0: 790d1a00
+	mulxu.w	e5,er5                          ; 93c4: 52d5
+	mov.w	e6,r0                             ; 93c6: 0de0
+	mov.w	#0x1c00,e0                        ; 93c8: 79081c00
+	mulxu.w	e0,er0                          ; 93cc: 5280
+	add.l	er0,er5                           ; 93ce: 0a85
+	bra	loc_9446:8                          ; 93d0: 4074
+loc_93d2:
+	mov.w	@(0xfffe:16,er6),r4               ; 93d2: 6f64fffe
+	mov.w	@(0x2:16,er6),e4                  ; 93d6: 6f6c0002
+	mov.w	r4,r0                             ; 93da: 0d40
+	add.w	e4,r0                             ; 93dc: 09c0
+	mov.w	@er6,r3                           ; 93de: 6963
+	add.w	r3,r0                             ; 93e0: 0930
+	mov.w	r0,r6                             ; 93e2: 0d06
+	add.w	#0x4,r1                           ; 93e4: 79110004
+	mov.b	r1l,r1h                           ; 93e8: 0c91
+	sub.b	r1l,r1l                           ; 93ea: 1899
+	shll.w	r1                               ; 93ec: 1011
+	exts.l	er1                              ; 93ee: 17f1
+	mov.w	r4,r0                             ; 93f0: 0d40
+	extu.l	er0                              ; 93f2: 1770
+	mov.w	e0,r2                             ; 93f4: 0d82
+	mulxu.w	r1,er2                          ; 93f6: 5212
+	mov.w	e1,r5                             ; 93f8: 0d95
+	mulxu.w	r0,er5                          ; 93fa: 5205
+	mulxu.w	r1,er0                          ; 93fc: 5210
+	add.w	r2,e0                             ; 93fe: 0928
+	add.w	r5,e0                             ; 9400: 0958
+	mov.w	e6,r1                             ; 9402: 0de1
+	add.w	#0x6,r1                           ; 9404: 79110006
+	mov.b	r1l,r1h                           ; 9408: 0c91
+	sub.b	r1l,r1l                           ; 940a: 1899
+	shll.w	r1                               ; 940c: 1011
+	exts.l	er1                              ; 940e: 17f1
+	mov.w	e4,r4                             ; 9410: 0dc4
+	extu.l	er4                              ; 9412: 1774
+	mov.w	e1,r2                             ; 9414: 0d92
+	mulxu.w	r4,er2                          ; 9416: 5242
+	mov.w	e4,r5                             ; 9418: 0dc5
+	mulxu.w	r1,er5                          ; 941a: 5215
+	mulxu.w	r4,er1                          ; 941c: 5241
+	add.w	r2,e1                             ; 941e: 0929
+	add.w	r5,e1                             ; 9420: 0959
+	add.l	er1,er0                           ; 9422: 0a90
+	mov.w	e6,r1                             ; 9424: 0de1
+	add.w	#0x5,r1                           ; 9426: 79110005
+	mov.b	r1l,r1h                           ; 942a: 0c91
+	sub.b	r1l,r1l                           ; 942c: 1899
+	shll.w	r1                               ; 942e: 1011
+	exts.l	er1                              ; 9430: 17f1
+	extu.l	er3                              ; 9432: 1773
+	mov.w	e1,r2                             ; 9434: 0d92
+	mulxu.w	r3,er2                          ; 9436: 5232
+	mov.w	e3,r4                             ; 9438: 0db4
+	mulxu.w	r1,er4                          ; 943a: 5214
+	mulxu.w	r3,er1                          ; 943c: 5231
+	add.w	r2,e1                             ; 943e: 0929
+	add.w	r4,e1                             ; 9440: 0949
+loc_9442:
+	add.l	er1,er0                           ; 9442: 0a90
+	mov.l	er0,er5                           ; 9444: 0f85
+loc_9446:
+	mov.w	r6,r1                             ; 9446: 0d61
+	extu.l	er1                              ; 9448: 1771
+	mov.l	er5,er0                           ; 944a: 0fd0
+	jsr	@func_b94e:24                       ; 944c: 5e00b94e
+	mov.l	@er7+,er6                         ; 9450: 01006d76
+	mov.w	@er7+,e4                          ; 9454: 6d7c
+	mov.w	@er7+,r2                          ; 9456: 6d72
+	rts                                     ; 9458: 5470

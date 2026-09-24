@@ -1,0 +1,110 @@
+	.h8300hn
+	.include "registers.inc"
+	.section .text
+
+	.global func_5c0a
+
+func_5c0a:
+	mov.l	er6,@-er7                         ; 5c0a: 01006df6
+	mov.w	#0xbe,e5                          ; 5c0e: 790d00be
+	sub.w	r0,r0                             ; 5c12: 1900
+	mov.w	r0,@0xf7a0:16                     ; 5c14: 6b80f7a0
+	mov.w	#0xf7b6,r0                        ; 5c18: 7900f7b6
+	bset	#0x2,@er0                          ; 5c1c: 7d007020
+	jsr	@func_247e:24                       ; 5c20: 5e00247e
+	mov.w	#0x68,e6                          ; 5c24: 790e0068
+	mov.w	e6,r0                             ; 5c28: 0de0
+	jsr	@func_2488:24                       ; 5c2a: 5e002488
+	mov.w	r0,r6                             ; 5c2e: 0d06
+	mov.w	r0,r1                             ; 5c30: 0d01
+	mov.w	e6,e1                             ; 5c32: 0de9
+	mov.l	#0x1ed00ed,er0                    ; 5c34: 7a0001ed00ed
+	jsr	@func_5128:24                       ; 5c3a: 5e005128
+	mov.b	@(0x5b:16,er6),r0l                ; 5c3e: 6e68005b
+	bld	#0x1,r0l                            ; 5c42: 7718
+	bcs	loc_5d4c:16                         ; 5c44: 58500104
+	mov.w	#0x5b,r0                          ; 5c48: 7900005b
+	add.w	r6,r0                             ; 5c4c: 0960
+	bset	#0x1,@er0                          ; 5c4e: 7d007010
+	mov.l	@er6,er0                          ; 5c52: 01006960
+	mov.l	er0,@(0x4:16,er6)                 ; 5c56: 01006fe00004
+	mov.w	@(0x8:16,er6),r0                  ; 5c5c: 6f600008
+	mov.w	r0,@(0xa:16,er6)                  ; 5c60: 6fe0000a
+	mov.w	#0x5b,r0                          ; 5c64: 7900005b
+	add.w	r6,r0                             ; 5c68: 0960
+	bset	#0x2,@er0                          ; 5c6a: 7d007020
+	mov.l	er6,er1                           ; 5c6e: 0fe1
+	mov.l	#0x1ed00ed,er0                    ; 5c70: 7a0001ed00ed
+	jsr	@func_50d8:24                       ; 5c76: 5e0050d8
+	jsr	@func_247e:24                       ; 5c7a: 5e00247e
+	mov.w	#0x180,e6                         ; 5c7e: 790e0180
+	mov.w	e6,r0                             ; 5c82: 0de0
+	jsr	@func_2488:24                       ; 5c84: 5e002488
+	mov.w	r0,r6                             ; 5c88: 0d06
+	mov.w	#func_5384,r5                     ; 5c8a: 79055384
+	mov.w	r0,e0                             ; 5c8e: 0d08
+	mov.w	#0x9d7e,r0                        ; 5c90: 79009d7e
+	mov.w	e6,r1                             ; 5c94: 0de1
+	jsr	@er5                                ; 5c96: 5d50
+	mov.w	e6,r1                             ; 5c98: 0de1
+	mov.w	#0x91be,r0                        ; 5c9a: 790091be
+	mov.w	r6,e0                             ; 5c9e: 0d68
+	jsr	@func_524e:24                       ; 5ca0: 5e00524e
+	mov.w	#0x9efe,r0                        ; 5ca4: 79009efe
+	mov.w	#0x600,r1                         ; 5ca8: 79010600
+	mov.w	r6,e0                             ; 5cac: 0d68
+	jsr	@er5                                ; 5cae: 5d50
+	mov.w	#0x933e,r0                        ; 5cb0: 7900933e
+	mov.w	#0x600,r1                         ; 5cb4: 79010600
+	mov.w	r6,e0                             ; 5cb8: 0d68
+	jsr	@func_524e:24                       ; 5cba: 5e00524e
+	mov.w	#0xa77e,r0                        ; 5cbe: 7900a77e
+	mov.w	#0x140,r1                         ; 5cc2: 79010140
+	mov.w	r6,e0                             ; 5cc6: 0d68
+	jsr	@er5                                ; 5cc8: 5d50
+	mov.w	r6,e0                             ; 5cca: 0d68
+	mov.w	#0x993e,r0                        ; 5ccc: 7900993e
+	mov.w	#0x140,r1                         ; 5cd0: 79010140
+	jsr	@func_524e:24                       ; 5cd4: 5e00524e
+	jsr	@func_247e:24                       ; 5cd8: 5e00247e
+	mov.w	e5,r0                             ; 5cdc: 0dd0
+	jsr	@func_2488:24                       ; 5cde: 5e002488
+	mov.w	r0,r6                             ; 5ce2: 0d06
+	mov.w	r0,e0                             ; 5ce4: 0d08
+	mov.w	#0x8f00,r0                        ; 5ce6: 79008f00
+	mov.w	e5,r1                             ; 5cea: 0dd1
+	jsr	@er5                                ; 5cec: 5d50
+	mov.w	#0x72,r0                          ; 5cee: 79000072
+	add.w	r6,r0                             ; 5cf2: 0960
+	mov.w	r6,r1                             ; 5cf4: 0d61
+	mov.w	#0x10,r2                          ; 5cf6: 79020010
+	jsr	@func_b9ce:24                       ; 5cfa: 5e00b9ce
+	mov.w	#0xd,r0                           ; 5cfe: 7900000d
+	add.w	r6,r0                             ; 5d02: 0960
+	bclr	#0x7,@er0                          ; 5d04: 7d007270
+	mov.b	#0x46,r0l                         ; 5d08: f846
+	mov.b	r0l,@(0x26:16,er6)                ; 5d0a: 6ee80026
+	sub.w	e6,e6                             ; 5d0e: 19ee
+	sub.b	r1l,r1l                           ; 5d10: 1899
+loc_5d12:
+	mov.w	#0x10,r0                          ; 5d12: 79000010
+	add.w	r6,r0                             ; 5d16: 0960
+	add.w	e6,r0                             ; 5d18: 09e0
+	mov.b	r1l,@er0                          ; 5d1a: 6889
+	inc.w	#1,e6                             ; 5d1c: 0b5e
+	cmp.w	#0x16,e6                          ; 5d1e: 792e0016
+	bcs	loc_5d12:8                          ; 5d22: 45ee
+	mov.w	r6,e0                             ; 5d24: 0d68
+	mov.w	#0x8f00,r0                        ; 5d26: 79008f00
+	mov.w	e5,r1                             ; 5d2a: 0dd1
+	jsr	@func_524e:24                       ; 5d2c: 5e00524e
+	sub.w	r0,r0                             ; 5d30: 1900
+	mov.w	r0,@0xf790:16                     ; 5d32: 6b80f790
+	mov.w	#0x18,e1                          ; 5d36: 79090018
+	mov.w	#0xf780,r1                        ; 5d3a: 7901f780
+	mov.l	#0x2560156,er0                    ; 5d3e: 7a0002560156
+	jsr	@func_50d8:24                       ; 5d44: 5e0050d8
+	jsr	@func_188c:24                       ; 5d48: 5e00188c
+loc_5d4c:
+	mov.l	@er7+,er6                         ; 5d4c: 01006d76
+	rts                                     ; 5d50: 5470

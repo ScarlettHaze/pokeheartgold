@@ -1,0 +1,4 @@
+build/
+baserom.bin
+*.bin
+__pycache__/
