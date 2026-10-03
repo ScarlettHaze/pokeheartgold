@@ -348,8 +348,8 @@ MOV_R0_0_NOP = bytes.fromhex('0020c046')
 
 
 # ---------------- ITCM code cave ----------------
-ITCM_BASE = 0x01FFC000
-ITCM_END = 0x02000000
+ITCM_BASE = 0x02111C00
+ITCM_END = 0x02112400
 _itcm_next = [ITCM_BASE]
 ITCM_ALLOC = {}
 
@@ -392,7 +392,7 @@ Cheat.ecode = _cheat_ecode
 Cheat.text = _cheat_text
 
 
-def hook(c, name, src, size_hint=0x100):
+def hook(c, name, src, size_hint=0x80):
     """Assemble thumb src at a fresh ITCM slot and add E code. Returns address."""
     a = itcm_alloc(name, size_hint)
     code = asm(src, a)

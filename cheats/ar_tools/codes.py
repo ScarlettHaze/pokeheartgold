@@ -1,9 +1,3 @@
-"""AR code generator for Pokemon HeartGold (Europe) (Rev 10), cheat DB id IPKE AD102382.
-
-Put the ROMs, cheats.xml (Rev 10 entry saved as rev10.xml) and pokeheartgold-xmap/ next to these scripts,
-then run `python3 codes.py` to write new_hg_eu_cheats_4.xml and `python3 verify.py` to check every code.
-Needs: pip install capstone keystone-engine unicorn
-"""
 from hg import *
 FOLDERS = []
 
@@ -53,7 +47,7 @@ cheat(F, 'Safari Zone Pokemon Never Flee', 'Wild Pokemon in the Safari Zone neve
 # ---------------- Battle codes ----------------
 import battle1, battle2, battle3, battle4, battle5, battle6
 F = folder('Battle Codes (New 2)')
-cheat(F, "Opponent's Moves Always Miss", "Every move an opponent aims at your side misses, including moves that normally never miss (Swift, Aerial Ace, Vital Throw). Moves the opponent uses on itself, weather and entry hazards still work. Do not combine with the Your Moves Never Miss code (they patch the same spot).", battle1.opp_miss_cheat())
+cheat(F, "Opponent's Moves Always Miss", "Every move an opponent aims at your side misses, including moves that normally never miss (Swift, Aerial Ace, Vital Throw). Moves the opponent uses on itself, weather and entry hazards still work. Do not combine with your Your Moves Never Miss code (they patch the same spot); use the combined code instead.", battle1.opp_miss_cheat())
 cheat(F, 'Your Moves Never Miss and Opponent Always Misses', "Combines Your Moves Never Miss and Opponent's Moves Always Miss in one code: your side's moves skip the accuracy check, and every move an opponent aims at your side misses. Use this instead of enabling both (they cannot be on together).", battle1.both_cheat())
 cheat(F, 'Your Pokemon Cannot Be Given Status Conditions', "Your side is treated as if Safeguard is always up: opponents' moves cannot put your Pokemon to sleep, poison, burn, freeze, paralyse or confuse them, and Yawn and Toxic Spikes fail. Abilities such as Static, Flame Body, Poison Point and Effect Spore can still pass on a status, and Flame Orb and Toxic Orb will not activate. Your own Safeguard move will fail because it is already active. A \"no longer protected\" message can show about every 8 turns; the protection comes back by itself.", battle3.safeguard_cheat())
 cheat(F, "Your Moves' Added Effects Always Happen", "Every added effect on your side's moves always triggers: burn from Flamethrower, paralysis from Thunderbolt, flinch from Headbutt, stat drops from Psychic, Ancient Power's all-stat boost and so on. Opponents roll as normal.", battle4.effect_cheat())
@@ -90,16 +84,10 @@ cheat(F2, 'Pickup Always Finds a Rare Item', 'After every battle, each Pokemon w
 # ---------------- Field codes ----------------
 import field1, field2
 F = folder('Field Codes (New)')
-cheat(F, 'PC and Heal Anywhere', '(Hold L and press X): Opens the Pokemon Center PC (Pokemon storage, item storage, Hall of Fame) wherever you are. (Hold R and press X): The screen fades, the healing jingle plays and your whole party is fully healed. Pressing X on its own still opens the menu. Works wherever X normally opens the menu (not inside Battle Frontier facilities or the Union Room).', field1.pc_heal_cheat())
+cheat(F, 'PC and Heal Anywhere', '(Hold L and press X): Opens the Pokemon Center PC (Pokemon storage, item storage, Hall of Fame) wherever you are. (Hold R and press X): The screen fades, the healing jingle plays and your whole party is fully healed. Pressing X on its own still opens the menu. While this code is on, PCs skip their screen on/off flash (needed so the PC can be used away from a real one). Works wherever X normally opens the menu (not inside Battle Frontier facilities or the Union Room).', field1.pc_heal_cheat())
 cheat(F, 'Trainers Always Ready for a Rematch', 'Every Trainer registered in your Pokegear is always ready for a rematch: talk to them at their usual spot and they battle you again with their strongest unlocked team, as many times as you like. Gym Leaders whose rematch is unlocked wait at their rematch location at any time. Phone calls from Trainers asking to battle are replaced by "I\'m waiting" calls.', field2.rematch_cheat())
 cheat(F, 'All Unown Forms in the Ruins of Alph', 'Wild Unown in the Ruins of Alph chambers can be any of the 28 forms (A-Z, ! and ?), even if you have not solved every puzzle. You still need to have solved at least one puzzle for Unown to appear. The Unown radio signal still favours forms you have not caught.', field2.unown_cheat())
 cheat(F, 'Free Game Corner Prizes', 'Prizes at the Goldenrod and Celadon Game Corner prize counters cost no coins. While the code is on, the game thinks you have 49,920 coins when it checks your balance, so the coin seller may say your Coin Case is full.', field2.coins_cheat())
-
-# ---------------- Fixed earlier codes ----------------
-import fixprev
-F = folder('Fixed Earlier Codes (Use Instead of the Old Ones)')
-cheat(F, 'Your Moves Never Miss (Fixed)', "Same effect as the earlier Your Moves Never Miss code, but its extra code now lives in unused ITCM memory instead of 0x02112400, which is inside the game's sound heap and could corrupt music and sound data. Delete the old version and use this one. Cannot be combined with Opponent's Moves Always Miss; use the combined code for both.", fixprev.nevermiss_fixed())
-cheat(F, 'Exp. Share for the Whole Party (Gen 6 Style) (Fixed)', "Same effect as the earlier party Exp. Share code (every non-fainted party Pokemon gets full Exp. and EVs), but its extra code now lives in unused ITCM memory instead of the sound heap at 0x02112420. Delete the old version and use this one.", fixprev.expshare_fixed())
 
 # ---------------- XML output ----------------
 from xml.sax.saxutils import escape

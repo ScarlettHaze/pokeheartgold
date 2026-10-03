@@ -28,6 +28,30 @@ lit_mz: .word %d
 lit_pc: .word 2010
 lit_heal: .word 2069
 ''' % (STARTSCRIPT, MYSTERY | 1))
+    # The PC script animates the Pokemon Center PC prop (tag 90). Away from a real PC that prop does not
+    # exist and the animation code dereferences NULL, so skip the PC's on/off animation entirely.
+    b, code2 = hook(c, 'pc_anim_skip', '''
+w308:
+cmp r1, #90
+beq skip
+ldr r2, lit308
+bx r2
+w309:
+cmp r1, #90
+beq skip
+ldr r2, lit309
+bx r2
+skip:
+bx lr
+.align 2
+lit308: .word 0x021E9C01
+lit309: .word 0x021E9C21
+''')
+    for p in (0x02045792, 0x020457AE, 0x020457CA):
+        c.patch(None, p, NOP + NOP)
+    c.patch(None, 0x020449BA, asm('bl %d' % b, 0x020449BA))
+    c.patch(None, 0x020449D2, asm('bl %d' % (b + 8), 0x020449D2))
+    assert code2[8:10] == bytes.fromhex('5a29')
     c.patch(1, 0x021E6D56, asm('bl %d' % a, 0x021E6D56), check_words=[0x021E6D54, 0x021E6D58])
     return c
 
