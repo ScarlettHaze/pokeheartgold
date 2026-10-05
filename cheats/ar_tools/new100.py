@@ -14,7 +14,7 @@ SLOT_ORDER = [
     ('noflinch', 0x14), ('noconfuse', 0x1C),
     ('wildmoves', 0x60), ('wildmoves2', 0x60), ('wildmoves3', 0x60),
     ('fly', 0x18), ('martlist', 0x68), ('sid', 0x0C),
-    ('swarmA', 0x14), ('swarmB', 0x10), ('swarmroll', 0x20), ('bugrare', 0x30),
+    ('swarmA', 0x14), ('swarmB', 0x10), ('swarmroll', 0x20), ('bugrare', 0x40),
 ]
 SLOTS = {}
 SWARM_FLAG = 0x0211237C        # scratch byte in the gap after the first region's slots (never written by codes)
@@ -666,31 +666,52 @@ NEW['Swarm Pokemon Appear More Often'] = swarm_more
 
 def bug_rare_more():
     c = Cheat()
-    # BugContest_GetEncounterSlot: re-roll LCRandom (up to 3 more times) until roll %% 100 < 20,
-    # i.e. one of the four rarest contest Pokemon (Scyther, Pinsir and the next two)
+    # The contest overlay (24) shares its RAM with overlays 19-26 and is loaded in the same frame the
+    # encounter is rolled, so it can't be patched in time. Hook the resident caller instead
+    # (FieldSystem_GenerateBugContestEncounter_Internal, overlay 2): call BugContest_GetEncounterSlot,
+    # and while the slot isn't one of the four rarest (table rate < 20, i.e. roll %% 100 < 20), free it and
+    # roll again, up to 3 more times. Each roll is the game's own, so the Pokemon is generated normally.
+    get, free = sym('BugContest_GetEncounterSlot')[0] & ~1, sym('Heap_Free')[0] & ~1
     h = cave(c, '''
-        push {r4, r5, lr}
-        movs r5, #4
+        push {r4, r5, r6, r7, lr}
+        adds r5, r0, #0
+        adds r6, r1, #0
+        movs r7, #3
     again:
-        bl 0x0201FD44
+        adds r0, r5, #0
+        adds r1, r6, #0
+        bl %d
         adds r4, r0, #0
-        adds r1, r0, #0
-    mod:
-        cmp r1, #100
-        blo m_done
-        subs r1, #100
-        b mod
-    m_done:
-        cmp r1, #20
-        blo ok
-        subs r5, #1
-        bne again
-    ok:
+        cmp r7, #0
+        beq done
+        ldr r0, [r4]
+        adds r1, r5, #0
+        adds r1, #0x20
+        movs r2, #10
+    find:
+        ldrh r3, [r1]
+        cmp r3, r0
+        beq found
+        adds r1, #8
+        subs r2, #1
+        bne find
+        b done
+    found:
+        ldrb r3, [r1, #4]
+        cmp r3, #20
+        blo done
         adds r0, r4, #0
-        pop {r4, r5, pc}
-    ''', 0x30, 'bugrare')
-    assert R().u32(0x02259B5C, 24) == 0xF8F1F5C6 or True
-    c.patch(24, 0x02259B5E, asm('bl %d' % h, 0x02259B5E), check_words=[0x02259B5C, 0x02259B60])
+        bl %d
+        subs r7, #1
+        b again
+    done:
+        adds r0, r4, #0
+        pop {r4, r5, r6, r7, pc}
+    ''' % (get, free), 0x40, 'bugrare')
+    site = 0x02247EE6
+    assert R().u32(0x02247EE4, 2) == 0xF0112104 and R().u32(0x02247EE8, 2) == 0x1C04FE33
+    assert asm('bl %d' % get, site) == bytes([0x11, 0xF0, 0x33, 0xFE])
+    c.patch(2, site, asm('bl %d' % h, site), check_words=[0x02247EE4, 0x02247EE8])
     return c
 NEW['Rare Bug-Catching Contest Pokemon Appear More Often'] = bug_rare_more
 

@@ -58,7 +58,7 @@ NEW_NOTES = {
     'Show Friendship on the Summary Screen': "Hold SELECT while switching Pokemon on the summary's skills page: the Attack number shows that Pokemon's friendship (0-255). Release SELECT and switch again to see Attack. Do not combine with the database's EV/IV Checker.",
     'Show Secret ID on the Trainer Card': 'Hold SELECT while opening your Trainer Card: ID No. shows your Secret ID instead (useful for planning shiny breeding). Open it normally to see your Trainer ID.',
     'Swarm Pokemon Appear More Often': 'While a swarm is on your route, the grass Pokemon picked is re-rolled (up to 3 more times) until it is the swarm Pokemon: about 87% instead of 40%. The Pokemon itself is generated normally.',
-    'Rare Bug-Catching Contest Pokemon Appear More Often': "In the Bug-Catching Contest the Pokemon picked is re-rolled (up to 3 more times) until it's one of the four rarest (Scyther, Pinsir and the next two): about 59% instead of 20%. The Pokemon itself is generated normally.",
+    'Rare Bug-Catching Contest Pokemon Appear More Often': "In the Bug-Catching Contest the Pokemon picked is re-rolled (up to 3 more times) until it's one of the four rarest on that day's list (for example Venonat, Paras, Scyther and Pinsir): about 59% instead of 20%. The Pokemon itself is generated normally.",
     'Skip the Egg-Hatching Animation': 'Eggs hatch straight away after the "Oh?" message, without the hatching scene. You won\'t be asked for a nickname (use the Name Rater later).',
 }
 import re as _re

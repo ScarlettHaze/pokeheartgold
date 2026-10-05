@@ -334,8 +334,8 @@
 			</cheat>
 			<cheat>
 				<name>Rare Bug-Catching Contest Pokemon Appear More Often</name>
-				<note>In the Bug-Catching Contest the Pokemon picked is re-rolled (up to 3 more times) until it's one of the four rarest (Scyther, Pinsir and the next two): about 59% instead of 20%. The Pokemon itself is generated normally.</note>
-				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112670 00000020 2504B530 FB66F70D 1C011C04 D3012964 E7FB3964 D3012914 D1F33D01 BD301C20 52259B5C F5C61C06 52259B60 2164F8F1 12259B5E 0000F6B8 12259B60 0000FD87 D2000000 00000000</codes>
+				<note>In the Bug-Catching Contest the Pokemon picked is re-rolled (up to 3 more times) until it's one of the four rarest on that day's list (for example Venonat, Paras, Scyther and Pinsir): about 59% instead of 20%. The Pokemon itself is generated normally.</note>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112670 00000040 1C05B5F0 27031C0E 1C311C28 FA68F147 2F001C04 6820D012 31201C29 880B220A D0034283 3A013108 E007D1F9 2B14790B 1C20D304 FA32F708 E7E53F01 BDF01C20 52247EE4 F0112104 52247EE8 1C04FE33 12247EE6 0000F6CA 12247EE8 0000FBC3 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Skip the Egg-Hatching Animation</name>
