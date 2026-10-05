@@ -3,37 +3,37 @@
 			<cheat>
 				<name>Infinite TMs</name>
 				<note>TMs are not used up when a Pokemon learns the move, so each TM can be used again (like Gen 5 onward). HMs already work this way.</note>
-				<codes>020825B4 46C046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 020825B4 46C046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Items Never Run Out When Used</name>
 				<note>Using an item no longer removes it from the Bag: Potions, status heals, Revives, Ethers/Elixirs, PP Ups, vitamins, Rare Candies, evolution stones, Sacred Ash, Escape Rope, Honey, and Poke Balls and healing items used in battle. Giving, selling, tossing, planting Berries and story items work as normal. TMs are covered by the Infinite TMs code.</note>
-				<codes>12064FCA 00002001 12064FCC 000046C0 02065360 46C02001 0207C34C 46C02001 12081A2E 00002001 12081A30 000046C0 0208280C 46C02001 5221DBEC FC22F65A 0221DBEC 46C02001 D0000000 00000000 522233A4 F846F655 022233A4 46C02001 D0000000 00000000 5224ABF0 FC20F62D 0224ABF0 46C02001 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 12064FCA 00002001 12064FCC 000046C0 02065360 46C02001 0207C34C 46C02001 12081A2E 00002001 12081A30 000046C0 0208280C 46C02001 5221DBEC FC22F65A 0221DBEC 46C02001 D0000000 00000000 522233A4 F846F655 022233A4 46C02001 D0000000 00000000 5224ABF0 FC20F62D 0224ABF0 46C02001 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Everything in Shops Costs 1</name>
 				<note>Every item in Poke Marts, Department Store counters, the Herb Shop, Pokeathlon Dome shops and other shop menus costs 1 (Poke Dollar or Athlete Point). You can buy up to 99 at a time. Vending machines and Game Corner prizes are not affected.</note>
-				<codes>52258120 4B0FB508 02258120 47702001 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52258120 4B0FB508 02258120 47702001 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Shopping Does Not Cost Money</name>
 				<note>Buying from shop menus no longer takes money (or Athlete Points) away. You still need enough money to afford what you pick. Do not combine with Everything in Shops Costs 1 (it is not needed).</note>
-				<codes>52257DF8 4B0DB510 12257DF8 00004770 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52257DF8 4B0DB510 12257DF8 00004770 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Items Sell for Full Price</name>
 				<note>Items sell for their full shop price instead of half. Items with no price still cannot be sold.</note>
-				<codes>521FCBA0 48731041 121FCBA0 00001C01 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 521FCBA0 48731041 121FCBA0 00001C01 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Infinite Repel</name>
 				<note>Once you use a Repel, Super Repel or Max Repel it never wears off. Repel only stops wild Pokemon that are a lower level than your first Pokemon. Turn the code off to let it count down again.</note>
-				<codes>5224BAF4 1E49D00B 1224BAF6 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5224BAF4 1E49D00B 1224BAF6 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Safari Zone Pokemon Never Flee</name>
 				<note>Wild Pokemon in the Safari Zone never run away; they stay "watching carefully" until you catch them, run, or use up your Safari Balls.</note>
-				<codes>5225E1A4 F0042204 1225E1A4 00002205 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5225E1A4 F0042204 1225E1A4 00002205 D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -41,27 +41,27 @@
 			<cheat>
 				<name>Opponent's Moves Always Miss</name>
 				<note>Every move an opponent aims at your side misses, including moves that normally never miss (Swift, Aerial Ace, Vital Throw). Moves the opponent uses on itself, weather and entry hazards still work. Do not combine with your Your Moves Never Miss code (they patch the same spot); use the combined code instead.</note>
-				<codes>E2111C00 00000024 2401B510 D0084226 D1064223 586A4904 506A4322 02802001 F128BD10 BD10FDE1 0000216C 00000000 5224BCD0 FD86F7EE 0224BCD0 FF96F6C5 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111C00 00000024 2401B510 D0084226 D1064223 586A4904 506A4322 02802001 F128BD10 BD10FDE1 0000216C 00000000 5224BCD0 FD86F7EE 0224BCD0 FF96F6C5 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Moves Never Miss and Opponent Always Misses</name>
 				<note>Combines Your Moves Never Miss and Opponent's Moves Always Miss in one code: your side's moves skip the accuracy check, and every move an opponent aims at your side misses. Use this instead of enabling both (they cannot be on together).</note>
-				<codes>E2111C80 00000024 2401B510 D0054226 D1064223 586A4904 506A4322 02802001 F128BD10 BD10FDA1 0000216C 00000000 5224BCD0 FD86F7EE 0224BCD0 FFD6F6C5 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111C80 00000024 2401B510 D0054226 D1064223 586A4904 506A4322 02802001 F128BD10 BD10FDA1 0000216C 00000000 5224BCD0 FD86F7EE 0224BCD0 FFD6F6C5 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Pokemon Cannot Be Given Status Conditions</name>
 				<note>Your side is treated as if Safeguard is always up: opponents' moves cannot put your Pokemon to sleep, poison, burn, freeze, paralyse or confuse them, and Yawn and Toxic Spikes fail. Abilities such as Static, Flame Body, Poison Point and Effect Spore can still pass on a status, and Flame Orb and Toxic Orb will not activate. Your own Safeguard move will fail because it is already active. A "no longer protected" message can show about every 8 turns; the protection comes back by itself.</note>
-				<codes>E2111D00 00000016 0089216F D1052800 68131862 43032008 20006013 00004770 5224563C 216FFA6F 52245640 18610089 1224563E 0000F6CC 12245640 0000FB5F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111D00 00000016 0089216F D1052800 68131862 43032008 20006013 00004770 5224563C 216FFA6F 52245640 18610089 1224563E 0000F6CC 12245640 0000FB5F D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Moves' Added Effects Always Happen</name>
 				<note>Every added effect on your side's moves always triggers: burn from Flamethrower, paralysis from Thunderbolt, flinch from Headbutt, stat drops from Psychic, Ancient Power's all-stat boost and so on. Opponents roll as normal.</note>
-				<codes>E2111D80 00000014 07C96E69 2000D401 49014770 46C04708 0223BD99 00000000 52244800 FACAF7F7 02244800 FABEF6CD D0000000 00000000 522505A4 FBF8F7EB 022505A4 FBECF6C1 D0000000 00000000 5225062C F7EB9800 52250630 2164FBB3 1225062E 0000F6C1 12250630 0000FBA7 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111D80 00000014 07C96E69 2000D401 49014770 46C04708 0223BD99 00000000 52244800 FACAF7F7 02244800 FABEF6CD D0000000 00000000 522505A4 FBF8F7EB 022505A4 FBECF6C1 D0000000 00000000 5225062C F7EB9800 52250630 2164FBB3 1225062E 0000F6C1 12250630 0000FBA7 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Multi-Hit Moves Always Hit 5 Times</name>
 				<note>Fury Attack, Bullet Seed, Rock Blast, Icicle Spear, Pin Missile and other 2-5 hit moves always hit 5 times when your side uses them (as if your Pokemon had Skill Link). Opponents roll as normal.</note>
-				<codes>E2111E00 00000010 D40107CA 4770205C 47104A00 022527CD 5223EC3C F0131C28 5223EC40 285CFDC5 1223EC3E 0000F6D3 1223EC40 0000F8DF D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111E00 00000010 D40107CA 4770205C 47104A00 022527CD 5223EC3C F0131C28 5223EC40 285CFDC5 1223EC3E 0000F6D3 1223EC40 0000F8DF D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -70,17 +70,17 @@
 			<cheat>
 				<name>Your Damage x2</name>
 				<note>Attacks from your side do x2 damage to the opponent. Damage taken and confusion self-hits are not changed. Enable only one.</note>
-				<codes>E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 0040D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 0040D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Damage x4</name>
 				<note>Attacks from your side do x4 damage to the opponent. Damage taken and confusion self-hits are not changed. Enable only one.</note>
-				<codes>E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 0080D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 0080D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Damage x8</name>
 				<note>Attacks from your side do x8 damage to the opponent. Damage taken and confusion self-hits are not changed. Enable only one.</note>
-				<codes>E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 00C0D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111F00 00000018 1C809821 780AA92B 07D2790B 07DBD402 00C0D500 BDF0B023 52257C1C 98219021 52257C20 B0231C80 12257C1E 0000F6BA 12257C20 0000F96F D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -89,17 +89,17 @@
 			<cheat>
 				<name>Prize Money x2</name>
 				<note>Money won from Trainer battles is multiplied by 2 (on top of Amulet Coin and Happy Hour). Your money still cannot go above 999,999. Enable only one.</note>
-				<codes>5223FC38 B00E1C20 1223FC38 00000060 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5223FC38 B00E1C20 1223FC38 00000060 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Prize Money x4</name>
 				<note>Money won from Trainer battles is multiplied by 4 (on top of Amulet Coin and Happy Hour). Your money still cannot go above 999,999. Enable only one.</note>
-				<codes>5223FC38 B00E1C20 1223FC38 000000A0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5223FC38 B00E1C20 1223FC38 000000A0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Prize Money x8</name>
 				<note>Money won from Trainer battles is multiplied by 8 (on top of Amulet Coin and Happy Hour). Your money still cannot go above 999,999. Enable only one.</note>
-				<codes>5223FC38 B00E1C20 1223FC38 000000E0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5223FC38 B00E1C20 1223FC38 000000E0 D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -107,7 +107,7 @@
 			<cheat>
 				<name>No Money Lost When You Black Out</name>
 				<note>Losing a battle no longer costs you any money.</note>
-				<codes>5223C24C 1C0EB570 0223C24C 47702000 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5223C24C 1C0EB570 0223C24C 47702000 D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -115,27 +115,27 @@
 			<cheat>
 				<name>Friendship Rises Very Fast</name>
 				<note>Anything that raises friendship (levelling up, vitamins, walking, battle items, TMs, Gym and Elite Four battles) now raises it by 80 instead of 1-5, so a Pokemon reaches max friendship after a few level-ups or a short walk. Things that lower friendship are unchanged.</note>
-				<codes>020FF524 50505050 020FF528 50505050 020FF52C 50505050 020FF530 50505050 020FF534 FFFF5050 020FF538 F6FBFBFF 020FF53C 50F6FBFB 020FF540 00005050 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 020FF524 50505050 020FF528 50505050 020FF52C 50505050 020FF530 50505050 020FF534 FFFF5050 020FF538 F6FBFBFF 020FF53C 50F6FBFB 020FF540 00005050 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Friendship Evolutions at Any Friendship</name>
 				<note>Pokemon that evolve by friendship (Golbat, Chansey, Pichu, Cleffa, Igglybuff, Togepi, Azurill, Budew, Chingling, Buneary, Munchlax, Riolu, Eevee) evolve on their next level-up whatever their friendship. Time-of-day rules still apply (Espeon/Riolu/Budew by day, Umbreon/Chingling by night). Everstone still blocks evolution.</note>
-				<codes>12070F76 00002800 12070F8C 00002800 12070FA2 00002800 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 12070F76 00002800 12070F8C 00002800 12070FA2 00002800 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Eggs Inherit 5 IVs (Destiny Knot Style)</name>
 				<note>Day Care Eggs inherit 5 IVs from the parents instead of 3, like holding a Destiny Knot in Gen 6+. No item is needed. Power items still choose one of the 5 stats.</note>
-				<codes>1206C306 0000B086 1206C482 0000B006 1206C34A 00002E05 1206C374 00002D05 1206C39E 00002E05 1206C3BE 00002E05 1206C47E 00002D05 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 1206C306 0000B086 1206C482 0000B006 1206C34A 00002E05 1206C374 00002D05 1206C39E 00002E05 1206C3BE 00002E05 1206C47E 00002D05 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Free Battle Frontier Move Tutors</name>
 				<note>The three move tutors at the Battle Frontier teach moves for 0 BP. The menu may still show the normal price, but no BP is taken.</note>
-				<codes>52202C04 5C400089 12202C06 00002000 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52202C04 5C400089 12202C06 00002000 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Free Move Relearner (No Heart Scale)</name>
 				<note>The Move Relearner in Blackthorn City teaches moves without needing or taking a Heart Scale.</note>
-				<codes>E2111F80 00000020 D101295D 47702001 47184B03 D101295D 47702001 47184B01 020784B1 02078435 1204EB2E 0000F0C3 1204EB30 0000FA27 1204EA7E 0000F0C3 1204EA80 0000FA85 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111F80 00000020 D101295D 47702001 47184B03 D101295D 47702001 47184B01 020784B1 02078435 1204EB2E 0000F0C3 1204EB30 0000FA27 1204EA7E 0000F0C3 1204EA80 0000FA85 D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -144,12 +144,12 @@
 			<cheat>
 				<name>Pickup Always Finds an Item</name>
 				<note>After every battle, each Pokemon with Pickup that is not holding an item picks one up (normally 10%). The item is chosen as normal for its level. Enable only one Pickup code.</note>
-				<codes>5224410C F7F71C38 52244110 210AFE43 1224410E 00002000 12244110 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5224410C F7F71C38 52244110 210AFE43 1224410E 00002000 12244110 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Pickup Always Finds a Rare Item</name>
 				<note>After every battle, each Pokemon with Pickup that is not holding an item picks up one of the rare Pickup items for its level (such as Nugget, King's Rock, Leftovers, Full Restore or a TM). Enable only one Pickup code.</note>
-				<codes>E2112000 0000000E F129B508 2101FEC9 30624008 0000BD08 5224410C F7F71C38 52244110 210AFE43 1224410E 00002000 12244110 000046C0 D0000000 00000000 D0000000 00000000 5224411C F7F71C38 52244120 2164FE3B 1224411E 0000F6CD 12244120 0000FF6F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112000 0000000E F129B508 2101FEC9 30624008 0000BD08 5224410C F7F71C38 52244110 210AFE43 1224410E 00002000 12244110 000046C0 D0000000 00000000 D0000000 00000000 5224411C F7F71C38 52244120 2164FE3B 1224411E 0000F6CD 12244120 0000FF6F D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -157,22 +157,22 @@
 			<cheat>
 				<name>PC and Heal Anywhere</name>
 				<note>(Hold L and press X): Opens the Pokemon Center PC (Pokemon storage, item storage, Hall of Fame) wherever you are. (Hold R and press X): The screen fades, the healing jingle plays and your whole party is fully healed. Pressing X on its own still opens the menu. While this code is on, PCs skip their screen on/off flash (needed so the PC can be used away from a real one). Works wherever X normally opens the menu (not inside Battle Frontier facilities or the Union Room).</note>
-				<codes>E2112080 0000002C 0A8A8929 0A4AD203 4905D203 49054708 4905E000 22001C20 FEECF72D BDF82001 0203BC11 000007DA 00000815 00000000 E2112100 0000001C D005295A 47104A03 D001295A 47104A02 46C04770 021E9C01 021E9C21 00000000 12045792 000046C0 12045794 000046C0 120457AE 000046C0 120457B0 000046C0 120457CA 000046C0 120457CC 000046C0 120449BA 0000F0CD 120449BC 0000FBA1 120449D2 0000F0CD 120449D4 0000FB99 521E6D54 F6541C20 521E6D58 2801FF5B 121E6D56 0000F72B 121E6D58 0000F993 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112080 0000002C 0A8A8929 0A4AD203 4905D203 49054708 4905E000 22001C20 FEECF72D BDF82001 0203BC11 000007DA 00000815 00000000 E2112100 0000001C D005295A 47104A03 D001295A 47104A02 46C04770 021E9C01 021E9C21 00000000 12045792 000046C0 12045794 000046C0 120457AE 000046C0 120457B0 000046C0 120457CA 000046C0 120457CC 000046C0 120449BA 0000F0CD 120449BC 0000FBA1 120449D2 0000F0CD 120449D4 0000FB99 521E6D54 F6541C20 521E6D58 2801FF5B 121E6D56 0000F72B 121E6D58 0000F993 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Trainers Always Ready for a Rematch</name>
 				<note>Every Trainer registered in your Pokegear is always ready for a rematch: talk to them at their usual spot and they battle you again with their strongest unlocked team, as many times as you like. Gym Leaders whose rematch is unlocked wait at their rematch location at any time. Phone calls from Trainers asking to battle are replaced by "I'm waiting" calls.</note>
-				<codes>1202F0FC 00002001 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 1202F0FC 00002001 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>All Unown Forms in the Ruins of Alph</name>
 				<note>Wild Unown in the Ruins of Alph chambers can be any of the 28 forms (A-Z, ! and ?). For a save with no traces, solve all four puzzles first and use this only for ! and ?: the Pokedex records which forms you have seen, so seeing letters from unsolved puzzles would not match. ! and ? normally appear during the Sinjoh Ruins (Arceus) event, so have done that event too. The caught Unown themselves are normal Ruins of Alph Unown.</note>
-				<codes>522484C8 6820D01A 122484C8 000046C0 D0000000 00000000 52248508 DBD82804 12248508 00002805 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 522484C8 6820D01A 122484C8 000046C0 D0000000 00000000 52248508 DBD82804 12248508 00002805 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Free Game Corner Prizes</name>
 				<note>Prizes at the Goldenrod and Celadon Game Corner prize counters cost no coins. While the code is on, the game thinks you have 49,920 coins when it checks your balance, so the coin seller may say your Coin Case is full.</note>
-				<codes>52259980 FFE6F5D2 02259980 020020C3 D0000000 00000000 522599D8 F5D21C29 522599DC 2000FFD7 122599DA 000046C0 122599DC 000046C0 D0000000 00000000 D0000000 00000000 52259A04 F5D28829 52259A08 2000FFC1 12259A06 000046C0 12259A08 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52259980 FFE6F5D2 02259980 020020C3 D0000000 00000000 522599D8 F5D21C29 522599DC 2000FFD7 122599DA 000046C0 122599DC 000046C0 D0000000 00000000 D0000000 00000000 52259A04 F5D28829 52259A08 2000FFC1 12259A06 000046C0 12259A08 000046C0 D2000000 00000000</codes>
 			</cheat>
 		</folder>
 		<folder>
@@ -180,166 +180,166 @@
 			<cheat>
 				<name>Roaming Legendaries Do Not Flee</name>
 				<note>Raikou, Entei, Latias and Latios fight like normal wild Pokemon instead of running away on the first turn, and Roar/Whirlwind used by any wild Pokemon fails (yours still work). Catch them with any ball as normal.</note>
-				<codes>5221BEC4 0540D001 1221BEC6 00002000 D0000000 00000000 E2112180 00000014 08526E4A 4A02D201 20004710 46C04770 0225277D 00000000 522416E8 F0119901 522416EC 2800F847 122416EA 0000F6D0 122416EC 0000FD49 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5221BEC4 0540D001 1221BEC6 00002000 D0000000 00000000 E2112180 00000014 08526E4A 4A02D201 20004710 46C04770 0225277D 00000000 522416E8 F0119901 522416EC 2800F847 122416EA 0000F6D0 122416EC 0000FD49 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Safari Zone Objects Count as Fully Waited</name>
 				<note>Objects you place in Safari Zone areas work as if they had been there for the maximum number of days, so the rare Safari Pokemon they attract can appear straight away. Nothing is written to your save; the real day counters keep counting normally.</note>
-				<codes>120976AA 000020FF D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 120976AA 000020FF D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Battle Points x2</name>
 				<note>Every Battle Point award from the Battle Frontier is doubled (still capped at 9,999). The hidden "Battle Points received" record is doubled to match, so the save stays consistent.</note>
-				<codes>0202D424 00498802 0202D428 49081852 0202D42C DD00428A 0202D430 80021C0A 1202D434 0000E007 E21121A0 0000000C 2C451C17 007FD100 47701C20 00000000 1202D14A 0000F0E5 1202D14C 0000F829 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 0202D424 00498802 0202D428 49081852 0202D42C DD00428A 0202D430 80021C0A 1202D434 0000E007 E21121A0 0000000C 2C451C17 007FD100 47701C20 00000000 1202D14A 0000F0E5 1202D14C 0000F829 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Athlete Points x2</name>
 				<note>Athlete Points earned from Pokeathlon courses and NPCs are doubled (still capped at 99,999). The game itself doubles AP on some days, so doubled amounts are normal.</note>
-				<codes>02031A38 58834A04 02031A3C 18590049 02031A40 42994B03 02031A44 1C19DD00 02031A48 47705081 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 02031A38 58834A04 02031A3C 18590049 02031A40 42994B03 02031A44 1C19DD00 02031A48 47705081 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Rock Smash Always Finds Something</name>
-				<note>Smashing a rock always gives a wild Pokemon where the area has Rock Smash Pokemon, and always gives an item everywhere else.</note>
-				<codes>522470FC DB0242A1 122470FE 0000E002 D0000000 00000000 52204D84 DA0742A1 12204D86 000046C0 D2000000 00000000</codes>
+				<note>Smashing a rock always gives a wild Pokemon where the area has Rock Smash Pokemon. Where it has none, you always get an item instead, but only in areas whose rocks can hold items at all (for example Violet City and Pewter City). Elsewhere rocks stay empty.</note>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 522470FC DB0242A1 122470FE 0000E002 D0000000 00000000 52204D84 DA0742A1 12204D86 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Traded Pokemon Always Obey</name>
 				<note>Traded Pokemon obey you whatever their level and however many badges you have. Has no effect in link or Battle Frontier battles, where the game never checks obedience.</note>
-				<codes>5224AED0 B08CB5F8 0224AED0 47702000 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5224AED0 B08CB5F8 0224AED0 47702000 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Bug-Catching Contest Always 1st Place</name>
 				<note>If you catch a Pokemon in the Bug-Catching Contest you always win 1st place and its prize (Sun Stone, or another evolution stone once you have the National Dex). The judge still announces the other contestants normally.</note>
-				<codes>E21121B0 00000012 F147B500 2800FE55 21C8D002 18400049 0000BD00 00000000 52259950 F00035AC 52259954 8068FA85 12259952 0000F6B8 12259954 0000FC2D D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21121B0 00000012 F147B500 2800FE55 21C8D002 18400049 0000BD00 00000000 52259950 F00035AC 52259954 8068FA85 12259952 0000F6B8 12259954 0000FC2D D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Kurt Makes 5 Balls per Apricorn</name>
 				<note>Kurt hands back 5 Poke Balls for every Apricorn you give him, so you can collect every Apricorn ball type quickly. Make sure you have bag space.</note>
-				<codes>E21121D0 0000000C F71FB500 0081FCFD BD001840 00000000 52201C90 FF9EF62F 02201C90 FA9EF710 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21121D0 0000000C F71FB500 0081FCFD BD001840 00000000 52201C90 FF9EF62F 02201C90 FA9EF710 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Sweet Scent and Honey Always Work</name>
 				<note>Sweet Scent and Honey start a wild battle even when you aren't standing in grass or water, using the area's grass Pokemon (or its water Pokemon if it has no grass). They still fail where there are no wild Pokemon at all.</note>
-				<codes>E21121E0 0000001E 1C04B510 FEDAF135 D1072800 F1351C20 2800FF11 1C20D102 FF12F135 0000BD10 521FC3E0 FDDCF04B 021FC3E0 FEFEF715 D0000000 00000000 E2112200 00000028 1C04B530 F1351C15 2800FA11 1C20D10B FF00F135 70292100 D1042800 F1351C20 2101FEFF BD307029 5224719C F000AA05 522471A0 2800FA45 1224719E 0000F6CB 122471A0 0000F82F D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21121E0 0000001E 1C04B510 FEDAF135 D1072800 F1351C20 2800FF11 1C20D102 FF12F135 0000BD10 521FC3E0 FDDCF04B 021FC3E0 FEFEF715 D0000000 00000000 E2112200 00000028 1C04B530 F1351C15 2800FA11 1C20D10B FF00F135 70292100 D1042800 F1351C20 2101FEFF BD307029 5224719C F000AA05 522471A0 2800FA45 1224719E 0000F6CB 122471A0 0000F82F D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Hoenn Sound Always On</name>
 				<note>Wild Pokemon act as if the Pokegear radio is playing Hoenn Sound, so its Pokemon appear without tuning in. Only use it after you have the National Dex (the radio show needs it). Enable only one of Hoenn/Sinnoh Sound.</note>
-				<codes>52246B0C 1C28D10F 12246B0C 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52246B0C 1C28D10F 12246B0C 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Sinnoh Sound Always On</name>
 				<note>Wild Pokemon act as if the Pokegear radio is playing Sinnoh Sound, so its Pokemon appear without tuning in. Only use it after you have the National Dex (the radio show needs it). Enable only one of Hoenn/Sinnoh Sound.</note>
-				<codes>52246B0C 1C28D10F 12246B0C 0000E013 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52246B0C 1C28D10F 12246B0C 0000E013 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Unown Is Always a Form You Have Not Caught</name>
 				<note>Wild Unown are always a form you haven't caught yet (from the puzzles you have solved), the same way the Unown radio signal works half the time. Once you have them all, forms are random again.</note>
-				<codes>52248510 2E00D010 12248510 000046C0 D0000000 00000000 52248520 DA072932 12248522 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 52248510 2E00D010 12248510 000046C0 D0000000 00000000 52248520 DA072932 12248522 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Unlimited Safari Balls</name>
 				<note>Throwing a Safari Ball doesn't use one up, so you never run out in the Safari Zone. The counter stays at 30.</note>
-				<codes>5224AD84 1E41FC97 1224AD86 00001C01 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5224AD84 1E41FC97 1224AD86 00001C01 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Unlimited Sport Balls</name>
 				<note>Throwing a Sport Ball in the Bug-Catching Contest doesn't use one up. The counter stays at 20.</note>
-				<codes>5224AEB0 1E41FC01 1224AEB2 00001C01 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 5224AEB0 1E41FC01 1224AEB2 00001C01 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Infinite PP</name>
 				<note>Your Pokemon's moves never lose PP in battle (Pressure included). Opponents use PP as normal. Do not combine with the database's PP Never Decreases code.</note>
-				<codes>E2112230 00000012 08526E6A 42A0D302 1B00DD01 20004770 00004770 00000000 5224B308 DD0142A0 5224B30C E0001B00 0224B308 FF92F6C6 0224B30C 46C0E001 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112230 00000012 08526E6A 42A0D302 1B00DD01 20004770 00004770 00000000 5224B308 DD0142A0 5224B30C E0001B00 0224B308 FF92F6C6 0224B30C 46C0E001 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Pokemon Can't Faint (HP Stops at 1)</name>
 				<note>Any damage to your Pokemon (attacks, poison, weather, recoil and so on) stops at 1 HP, so your Pokemon can't faint in battle. A Pokemon that is already fainted stays fainted.</note>
-				<codes>E2112250 00000034 1C0CB530 FA1AF135 D20E0841 434121C0 4A061861 29005889 4A05DD07 18CD58A3 DC022D00 1A5B2301 BD3050A3 00002D8C 0000215C 00000000 5223E178 F0091C21 5223E17C 1C02FA87 1223E17A 0000F6D4 1223E17C 0000F869 D0000000 00000000 D0000000 00000000 5223E218 F0091C21 5223E21C 1C02FA37 1223E21A 0000F6D4 1223E21C 0000F819 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112250 00000034 1C0CB530 FA1AF135 D20E0841 434121C0 4A061861 29005889 4A05DD07 18CD58A3 DC022D00 1A5B2301 BD3050A3 00002D8C 0000215C 00000000 5223E178 F0091C21 5223E17C 1C02FA87 1223E17A 0000F6D4 1223E17C 0000F869 D0000000 00000000 D0000000 00000000 5223E218 F0091C21 5223E21C 1C02FA37 1223E21A 0000F6D4 1223E21C 0000F819 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>You Take Half Damage</name>
 				<note>Attacks from the other side do half damage to your Pokemon (at least 1). Works with the Your Damage codes.</note>
-				<codes>E2112290 00000020 4A061C0C 6E633A28 D305085B 085B6EE3 58A3D202 50A3105B 47704A00 0000216C 5224C694 1C0C4AC9 0224C694 FDFCF6C5 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112290 00000020 4A061C0C 6E633A28 D305085B 085B6EE3 58A3D202 50A3105B 47704A00 0000216C 5224C694 1C0C4AC9 0224C694 FDFCF6C5 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Opponents Can't Lower Your Stats</name>
 				<note>Moves and abilities from the other side (Growl, Intimidate and so on) can't lower your Pokemon's stats; the game shows "protected by Mist!". Your own stat drops (like Superpower) still happen.</note>
-				<codes>E21122C0 0000001A 04405840 08526E6A 1C2AD306 68123294 D2010852 07402001 00004770 00000000 5223EF70 58400089 5223EF74 0F400440 1223EF72 0000F6D3 1223EF74 0000F9A5 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21122C0 0000001A 04405840 08526E6A 1C2AD306 68123294 D2010852 07402001 00004770 00000000 5223EF70 58400089 5223EF74 0F400440 1223EF72 0000F6D3 1223EF74 0000F9A5 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Stat Boosts Are Doubled</name>
 				<note>When your Pokemon's stats rise, they rise twice as much (+1 becomes +2, +2 becomes +4), still capped at +6.</note>
-				<codes>E21122E0 00000018 DD082F00 32941C2A 08526812 007FD200 32024672 47704696 5223EE08 DC002F00 0223EE08 FA6AF6D3 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21122E0 00000018 DD082F00 32941C2A 08526812 007FD200 32024672 47704696 5223EE08 DC002F00 0223EE08 FA6AF6D3 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Your Pokemon Can't Be Confused or Flinch</name>
 				<note>Your Pokemon never flinch, and confusion wears off before it can make them hurt themselves, so they never lose a turn to either.</note>
-				<codes>E2112300 00000014 6E63B408 D201085B 43992308 2008BC08 47704208 00000000 5224B790 42082008 0224B790 FDB6F6C6 D0000000 00000000 E2112314 00000016 6E63B408 D202085B 43992307 BC085011 42082007 00004770 5224B93C 20075811 5224B940 D1004208 1224B93E 0000F6C6 1224B940 0000FCE9 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112300 00000014 6E63B408 D201085B 43992308 2008BC08 47704208 00000000 5224B790 42082008 0224B790 FDB6F6C6 D0000000 00000000 E2112314 00000016 6E63B408 D202085B 43992307 BC085011 42082007 00004770 5224B93C 20075811 5224B940 D1004208 1224B93E 0000F6C6 1224B940 0000FCE9 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Wild Pokemon Never Use Self-Destruct or Explosion</name>
 				<note>Wild Pokemon never pick Self-Destruct or Explosion (unless it's the only move they can use), so Geodude, Voltorb and friends are easy to catch. Enable only one of the three Wild Pokemon Never Use codes.</note>
-				<codes>E2112480 00000040 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B4809 28078818 E002D000 40A02001 1C644302 DBEE2C04 439043C8 D0000700 BC3D4311 BD004208 000003DE 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F813 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112480 00000040 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B4809 28078818 E002D000 40A02001 1C644302 DBEE2C04 439043C8 D0000700 BC3D4311 BD004208 000003DE 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F813 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Wild Pokemon Never Use Self-Targeting Moves</name>
 				<note>Wild Pokemon never pick status moves that target themselves: stat raises (Swords Dance, Harden...), healing (Recover, Rest...), Protect, Substitute and Teleport (no more Abra escaping). Enable only one of the three Wild Pokemon Never Use codes.</note>
-				<codes>E21124E0 00000044 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B480A 28027898 8918D105 D50206C0 40A02001 1C644302 DBEC2C04 439043C8 D0000700 BC3D4311 BD004208 000003DE 00000000 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F843 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21124E0 00000044 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B480A 28027898 8918D105 D50206C0 40A02001 1C644302 DBEC2C04 439043C8 D0000700 BC3D4311 BD004208 000003DE 00000000 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F843 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Wild Pokemon Never Use Explosion or Self-Targeting Moves</name>
 				<note>Both of the above together: no Self-Destruct, Explosion, stat raises, healing, Protect, Substitute or Teleport from wild Pokemon. Enable only one of the three Wild Pokemon Never Use codes.</note>
-				<codes>E2112540 0000004C 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B480C 28078818 7898D005 D1052802 06C08918 2001D502 430240A0 2C041C64 43C8DBE9 07004390 4311D000 4208BC3D 46C0BD00 000003DE 00000000 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F873 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112540 0000004C 8C71B53D 22009D09 00632400 899B18F3 18EB011B 181B480C 28078818 7898D005 D1052802 06C08918 2001D502 430240A0 2C041C64 43C8DBE9 07004390 4311D000 4208BC3D 46C0BD00 000003DE 00000000 5225E454 8C71F935 5225E458 D1024208 1225E456 0000F6B4 1225E458 0000F873 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>No Poison Damage While Walking</name>
 				<note>Poisoned Pokemon don't lose HP while you walk. They stay poisoned until healed.</note>
-				<codes>521E794C 1C05B538 021E794C 47702000 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 521E794C 1C05B538 021E794C 47702000 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Fly From Inside Buildings and Caves</name>
 				<note>Fly works inside buildings and caves (anywhere you could make a phone call). It still can't be used in the Elite Four rooms, Hall of Fame, Battle Tower elevator, Union Room or Wi-Fi rooms.</note>
-				<codes>E21125A0 00000014 1C04B510 FF56F728 D1022800 F7281C20 BD10FF6D 00000000 02068034 FAB4F0AA D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21125A0 00000014 1C04B510 FF56F728 D1022800 F7281C20 BD10FF6D 00000000 02068034 FAB4F0AA D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Day Care Pokemon Do Not Gain Exp</name>
 				<note>Pokemon left at the Day Care don't gain Exp. or learn moves, and the Day Care man only charges the base fee. Eggs are still found as normal.</note>
-				<codes>1206C012 0000E013 1206C0C8 00001C00 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 1206C012 0000E013 1206C0C8 00001C00 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Shiny Eggs More Often (Masuda Method Always On)</name>
 				<note>Every Day Care egg gets the Masuda method re-rolls, as if one parent were from a different-language game (about 5 times the normal shiny chance). This is exactly what international breeding does, so the eggs look normal.</note>
-				<codes>1206C9D8 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 1206C9D8 000046C0 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Dept. Store Sells Every Ball and Evolution Item</name>
 				<note>The Poke Ball counters on Goldenrod and Celadon Dept. Store 2F sell every ball you can use in HeartGold (Apricorn balls included) and every evolution stone and evolution item, at their normal prices, plus Escape Rope, Poke Doll and Repels.</note>
-				<codes>E21125B8 00000062 00030002 00060004 00080007 000A0009 000C000B 000E000D 01EC000F 01EE01ED 01F001EF 01F201F1 00540052 00550053 00500051 006C006B 006E006D 00E900DD 00FC00EB 01420141 01440143 01460145 00E20147 004E00E3 004F003F 004D004C 0000FFFF 00000000 0210FA4C 021125B8 0210FA88 021125B8 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E21125B8 00000062 00030002 00060004 00080007 000A0009 000C000B 000E000D 01EC000F 01EE01ED 01F001EF 01F201F1 00540052 00550053 00500051 006C006B 006E006D 00E900DD 00FC00EB 01420141 01440143 01460145 00E20147 004E00E3 004F003F 004D004C 0000FFFF 00000000 0210FA4C 021125B8 0210FA88 021125B8 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Show Friendship on the Summary Screen</name>
 				<note>Hold SELECT while switching Pokemon on the summary's skills page: the Attack number shows that Pokemon's friendship (0-255). Release SELECT and switch again to see Attack. Do not combine with the database's EV/IV Checker.</note>
-				<codes>520899C4 F99CF7E6 94000130 FFFB0000 120899E4 00002109 D0000000 00000000 94000130 FFFB0004 120899E4 000021A5 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 520899C4 F99CF7E6 94000130 FFFB0000 120899E4 00002109 D0000000 00000000 94000130 FFFB0004 120899E4 000021A5 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Show Secret ID on the Trainer Card</name>
 				<note>Hold SELECT while opening your Trainer Card: ID No. shows your Secret ID instead (useful for planning shiny breeding). Open it normally to see your Trainer ID.</note>
-				<codes>E2112620 0000000A F716B500 0C00FCAF 0000BD00 00000000 94000130 FFFB0000 0206901C FB00F0A9 D0000000 00000000 94000130 FFFB0004 0206901C FFB4F7BF D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112620 0000000A F716B500 0C00FCAF 0000BD00 00000000 94000130 FFFB0000 0206901C FB00F0A9 D0000000 00000000 94000130 FFFB0004 0206901C FFB4F7BF D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Swarm Pokemon Appear More Often</name>
 				<note>While a swarm is on your route, the grass Pokemon picked is re-rolled (up to 3 more times) until it is the swarm Pokemon: about 87% instead of 40%. The Pokemon itself is generated normally.</note>
-				<codes>E211262C 00000014 4903B406 700A2200 1C05BC06 477068E8 0211237C 00000000 E2112640 00000010 48026030 70012101 47708820 0211237C E2112650 00000020 2404B510 F81AF135 78094904 D0032900 D3012802 D1F53C01 46C0BD10 0211237C 52246B58 1C05B5F8 52246B5C 1C0C68E8 12246B5A 0000F6CB 12246B5C 0000FD67 D0000000 00000000 D0000000 00000000 52246B94 88206030 02246B94 FD54F6CB D0000000 00000000 52247BCC FD5EF7FF 02247BCC FD40F6CA D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E211262C 00000014 4903B406 700A2200 1C05BC06 477068E8 0211237C 00000000 E2112640 00000010 48026030 70012101 47708820 0211237C E2112650 00000020 2404B510 F81AF135 78094904 D0032900 D3012802 D1F53C01 46C0BD10 0211237C 52246B58 1C05B5F8 52246B5C 1C0C68E8 12246B5A 0000F6CB 12246B5C 0000FD67 D0000000 00000000 D0000000 00000000 52246B94 88206030 02246B94 FD54F6CB D0000000 00000000 52247BCC FD5EF7FF 02247BCC FD40F6CA D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Rare Bug-Catching Contest Pokemon Appear More Often</name>
 				<note>In the Bug-Catching Contest the Pokemon picked is re-rolled (up to 3 more times) until it's one of the four rarest (Scyther, Pinsir and the next two): about 59% instead of 20%. The Pokemon itself is generated normally.</note>
-				<codes>E2112670 00000020 2504B530 FB66F70D 1C011C04 D3012964 E7FB3964 D3012914 D1F33D01 BD301C20 52259B5C F5C61C06 52259B60 2164F8F1 12259B5E 0000F6B8 12259B60 0000FD87 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2112670 00000020 2504B530 FB66F70D 1C011C04 D3012964 E7FB3964 D3012914 D1F33D01 BD301C20 52259B5C F5C61C06 52259B60 2164F8F1 12259B5E 0000F6B8 12259B60 0000FD87 D2000000 00000000</codes>
 			</cheat>
 			<cheat>
 				<name>Skip the Egg-Hatching Animation</name>
 				<note>Eggs hatch straight away after the "Oh?" message, without the hatching scene. You won't be asked for a nickname (use the Name Rater later).</note>
-				<codes>12091122 000046C0 12091124 000046C0 D2000000 00000000</codes>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 12091122 000046C0 12091124 000046C0 D2000000 00000000</codes>
 			</cheat>
 		</folder>

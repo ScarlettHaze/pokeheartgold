@@ -59,10 +59,12 @@ class ARCode:
                 else:
                     raise NotImplementedError(hex(a))
                 continue
-            if t in (5, 6, 9, 0xA):
+            if t in (3, 4, 5, 6, 9, 0xA):
                 addr = a & 0x0FFFFFFF
                 if addr == 0: addr = offset
-                if t == 5: c = r32(addr) == b
+                if t == 3: c = r32(addr) < b
+                elif t == 4: c = r32(addr) > b
+                elif t == 5: c = r32(addr) == b
                 elif t == 6: c = r32(addr) != b
                 elif t == 9:
                     v = keyreg if a == 0x94000130 else r16(addr)
