@@ -29,6 +29,7 @@ for log in sys.argv[1:]:
                 if p % 25 == nature: break
             ivs = (nxt() & 0x7FFF) | ((nxt() & 0x7FFF) << 15)
             if any((ivs >> (5 * k)) & 31 == 31 for k in range(6)): break
+        used = attempt + 1
         good = spc == sp and p == pid and ivs == iv and lvl == party[4]
         print('%-28s roll %2d -> species %d (caught %d) lvl %d (caught %d) PID %08X/%08X IVs %s -> %s' % (
-            fn, roll, spc, sp, lvl, party[4], p, pid, 'match' if ivs == iv else 'differ', 'RNG-CONSISTENT' if good else 'NOT CONSISTENT'))
+            fn, roll, spc, sp, lvl, party[4], p, pid, 'match' if ivs == iv else 'differ', 'RNG-CONSISTENT' if good else 'NOT CONSISTENT') + '  (generation attempt %d of 4)' % used)
