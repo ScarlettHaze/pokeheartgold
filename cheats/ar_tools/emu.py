@@ -25,7 +25,7 @@ class ARCode:
     def run(self, mem, held):
         w = self.w
         i = 0; n = len(w)
-        offset = 0; stack = []; ex = True
+        offset = 0; stack = []; ex = True; data = 0
         keyreg = 0x3FF
         for k in held:
             if k in ARBIT:
@@ -56,6 +56,22 @@ class ARCode:
                     if ex: offset = b
                 elif s == 0xC:
                     if ex: offset += b
+                elif s == 1:
+                    if stack: ex = stack.pop()
+                elif s == 4:
+                    if ex: data = (data + b) & 0xFFFFFFFF
+                elif s == 5:
+                    if ex: data = b
+                elif s in (6, 7, 8):
+                    if ex:
+                        ad = b + offset
+                        if s == 6: mem.write_long(ad, data); offset += 4
+                        elif s == 7: mem.write_short(ad, data & 0xFFFF); offset += 2
+                        else: mem.write_byte(ad, data & 0xFF); offset += 1
+                elif s in (9, 0xA, 0xB):
+                    if ex:
+                        ad = b + offset
+                        data = r32(ad) if s == 9 else (r16(ad) if s == 0xA else mem.read(ad, ad, 1, False))
                 else:
                     raise NotImplementedError(hex(a))
                 continue
