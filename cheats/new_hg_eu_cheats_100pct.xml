@@ -342,4 +342,9 @@
 				<note>Eggs hatch straight away after the "Oh?" message, without the hatching scene. You won't be asked for a nickname (use the Name Rater later).</note>
 				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 12091122 000046C0 12091124 000046C0 D2000000 00000000</codes>
 			</cheat>
+			<cheat>
+				<name>Only Pokemon You Have Not Seen Appear</name>
+				<note>Wild Pokemon you have already seen in your Pokedex never appear; only ones you haven't seen get through (grass, caves, surfing, fishing, Rock Smash and Headbutt; not the Safari Zone, Bug-Catching Contest, roamers or set encounters). Where you've seen everything in an area you get no wild battles at all, like an endless Repel. Nothing about the Pokemon changes: it's blocked at the same moment a Repel blocks an encounter, before the Pokemon is created. Repels still work as normal on top. Don't use with the 'Repel Only Lets Through Uncaught Pokemon' code (same hook).</note>
+				<codes>520041BC F0003094 4211186C 021FFFFF 3211186C 02400000 E2111DC0 00000026 AB07B503 00DB781B 041B58E3 69880C1B F7181C19 2800F937 D102BC03 FA58F136 2001BD00 0000BD00 52247D6C F0001C29 52247D70 2801FA8F 12247D6E 0000F6CA 12247D70 0000F827 D2000000 00000000</codes>
+			</cheat>
 		</folder>

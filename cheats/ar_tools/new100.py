@@ -723,5 +723,42 @@ def skip_hatch_anim():
     return c
 NEW['Skip the Egg-Hatching Animation'] = skip_hatch_anim
 
+
+def only_unseen():
+    c = Cheat()
+    # FieldSystem_GenerateRegularEncounter: the call to EncounterGen_DoesRepelSuppressEncounter (just before the
+    # Pokemon is created) also blocks species already seen in the Pokedex. Grass, caves, water, fishing,
+    # Rock Smash, Headbutt. Blocked encounters behave exactly like a Repel-blocked one.
+    A = 0x02111DC0      # free gap in the first pack's cave area (0x02111D94-0x02111E00 unused by any code)
+    seen, repel = sym('Pokedex_CheckMonSeenFlag')[0] & ~1, sym('EncounterGen_DoesRepelSuppressEncounter')[0] & ~1
+    code = asm('''
+        push {r0, r1, lr}
+        add r3, sp, #0x1c
+        ldrb r3, [r3]
+        lsls r3, r3, #3
+        ldr r3, [r4, r3]
+        lsls r3, r3, #16
+        lsrs r3, r3, #16
+        ldr r0, [r1, #0x18]
+        adds r1, r3, #0
+        bl %d
+        cmp r0, #0
+        pop {r0, r1}
+        bne block
+        bl %d
+        pop {pc}
+    block:
+        movs r0, #1
+        pop {pc}
+    ''' % (seen, repel), A)
+    assert len(code) <= 0x40, len(code)
+    c.ecode(A, code)
+    site = 0x02247D6E
+    assert R().u32(0x02247D6C, 2) == 0xF0001C29 and R().u32(0x02247D70, 2) == 0x2801FA8F
+    assert asm('bl %d' % repel, site) == bytes([0x00, 0xF0, 0x8F, 0xFA])
+    c.patch(2, site, asm('bl %d' % A, site), check_words=[0x02247D6C, 0x02247D70])
+    return c
+NEW['Only Pokemon You Have Not Seen Appear'] = only_unseen
+
 if __name__ == '__main__':
     for n, f in NEW.items(): print(n, '::', f().text())
