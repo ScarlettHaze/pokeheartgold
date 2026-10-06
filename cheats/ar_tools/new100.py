@@ -760,5 +760,52 @@ def only_unseen():
     return c
 NEW['Only Pokemon You Have Not Seen Appear'] = only_unseen
 
+
+def rare_slots_more():
+    c = Cheat()
+    # The five wild slot rolls (land, surf, fishing, Rock Smash, Headbutt) each do LCRandom() %% 100 and map the
+    # top of the range to the rare slots. Replace that LCRandom call: while LCRandom() %% 100 is below the rare
+    # threshold, roll again (up to 3 more times). The roll that is kept is always the last one, as usual.
+    A = 0x02111ECC      # free gap 0x02111ECB-0x02111F00 in the first pack's cave area
+    LCR, DIV = 0x0201FD44, 0x020F2998
+    code = asm('''
+    e80:
+        movs r2, #80
+        b c
+    e85:
+        movs r2, #85
+        b c
+    e90:
+        movs r2, #90
+    c:
+        push {r4, r5, r6, lr}
+        adds r6, r2, #0
+        movs r5, #4
+    again:
+        bl %d
+        adds r4, r0, #0
+        movs r1, #100
+        blx %d
+        cmp r1, r6
+        bhs done
+        subs r5, #1
+        bne again
+    done:
+        adds r0, r4, #0
+        pop {r4, r5, r6, pc}
+    ''' % (LCR, DIV), A)
+    assert len(code) <= 0x34, len(code)
+    c.ecode(A, code)
+    entry = {80: A, 85: A + 4, 90: A + 8}
+    sites = [('EncounterSlot_WildMonSlotRoll_Land', 80), ('EncounterSlot_WildMonSlotRoll_Surfing', 90),
+             ('EncounterSlot_WildMonSlotRoll_Fishing', 85), ('EncounterSlot_WildMonSlotRoll_RockSmash', 80),
+             ('EncounterSlot_WildMonSlotRoll_Headbutt', 80)]
+    for n, t in sites:
+        f = sym(n)[0] & ~1; site = f + 2
+        assert asm('bl %d' % LCR, site) == bytes(R().read(site, 4, 2)), n
+        c.patch(2, site, asm('bl %d' % entry[t], site), check_words=[f, f + 4])
+    return c
+NEW['Rare Wild Pokemon Appear More Often'] = rare_slots_more
+
 if __name__ == '__main__':
     for n, f in NEW.items(): print(n, '::', f().text())
